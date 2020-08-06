@@ -1,0 +1,26 @@
+{
+  "private": true,
+  "name": "javascript-packages",
+  "description": "",
+  "version": "1.0.0",
+  "author": "Ryota Suzuki",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "basics::createPackage": "lerna create",
+    "basics::version": "lerna version --conventional-commits",
+    "basics::install": "yarn add",
+    "basics::rootInstall": "yarn add -W",
+    "basics::remove": "yarn remove",
+    "basics::clean": "lerna clean",
+    "start": "lerna run start --stream",
+    "build": "lerna run build --stream",
+    "test": "lerna run test --stream",
+    "lint": "lerna run start --stream"
+  },
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  }
+}
