@@ -1,0 +1,20 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "es2015",
+    "lib": ["es2018"],
+    "strict": true,
+    // "downlevelIteration": true,
+    "esModuleInterop": true,
+    "declaration": true,
+    // NOTE: needs tslib.
+    "importHelpers": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "typeRoots": [
+      "../node_modules/@types"
+    ]
+  }
+}

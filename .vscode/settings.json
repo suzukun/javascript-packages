@@ -1,0 +1,7 @@
+{
+  "editor.rulers": [100],
+  "search.exclude": {
+    "dist": true,
+    "**/node_modules": true
+  }
+}
