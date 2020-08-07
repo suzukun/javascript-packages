@@ -3,6 +3,7 @@ module.exports = {
     plugins: ["@typescript-eslint"],
     parser: "@typescript-eslint/parser",
     env: {
+        browser: true,
         node: true,
         es6: true,
         jest: true,
