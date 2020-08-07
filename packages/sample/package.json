@@ -16,7 +16,7 @@
   ],
   "scripts": {
     "start": "ts-node index.ts",
-    "build": "rimraf ./dist && tsc",
+    "build": "webpack",
     "test": "jest --passWithNoTests",
     "lint": "eslint --ext .ts --fix ."
   }
