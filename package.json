@@ -24,7 +24,7 @@
     "lint": "lerna run --stream lint"
   },
   "lint-staged": {
-    "*.ts": "eslint"
+    "*.ts": "eslint --ext .ts --fix ."
   },
   "husky": {
     "hooks": {
