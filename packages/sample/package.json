@@ -6,7 +6,7 @@
   "author": "Ryota Suzuki",
   "homepage": "",
   "license": "MIT",
-  "main": "dist/index.js",
+  "main": "./dist/index.js",
   "directories": {
     "src": "src",
     "test": "__tests__"
