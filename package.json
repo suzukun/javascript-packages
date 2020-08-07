@@ -58,6 +58,5 @@
     "webpack-cli": "3.3.12",
     "webpack-merge": "5.1.1",
     "webpackbar": "4.0.0"
-  },
-  "dependencies": {}
+  }
 }
