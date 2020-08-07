@@ -24,7 +24,13 @@
     "lint": "lerna run --stream lint"
   },
   "devDependencies": {
+    "@types/jest": "26.0.9",
+    "jest": "26.2.2",
+    "jest-transform-stub": "2.0.0",
     "lerna": "^3.22.1",
+    "rimraf": "3.0.2",
+    "ts-jest": "26.1.4",
+    "ts-node": "8.10.2",
     "tslib": "2.0.0",
     "typescript": "3.9.7"
   },

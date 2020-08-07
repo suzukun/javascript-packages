@@ -1,4 +1,4 @@
-const base = require("../../jest.config.base");
+const base = require("../../config/jest.config.base");
 const pack = require("./package");
 
 module.exports = {
@@ -6,5 +6,5 @@ module.exports = {
   displayName: pack.name,
   name: pack.name,
   rootDir: "../..",
-  testMatch: [`<rootDir>/packages/${pack.name}/__test__/*.spec.{js,ts}`],
+  testMatch: [`<rootDir>/packages/${pack.name}/__tests__/**/*.test.{js,ts}`],
 };

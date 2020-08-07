@@ -1,5 +1,7 @@
 import {sample} from "../src/lib/sample";
 
 describe('sample', () => {
-    it('needs tests');
-});
+    test('sample is function', () => {
+        expect(typeof sample).toBe("function");
+    });
+})

@@ -11,8 +11,13 @@
     "src": "src",
     "test": "__tests__"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "start": "ts-node index.ts",
+    "build": "rimraf ./dist && tsc",
+    "test": "jest --passWithNoTests",
+    "lint": "eslint --ext .ts --fix ."
   }
 }
