@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "iiLoader",
+  "name": "ii-loader",
   "version": "1.0.0",
   "description": "> TODO: description",
   "author": "Ryota Suzuki",
@@ -14,10 +14,36 @@
   "files": [
     "dist"
   ],
+  "lint-staged": {
+    "*.ts": [
+      "eslint --ext .ts --fix .",
+      "git add"
+    ]
+  },
   "scripts": {
-    "start": "ts-node index.ts",
+    "start": "npm run build && node __tests__/actually/webpack/index.js",
     "build": "webpack",
     "test": "jest --passWithNoTests",
-    "lint": "eslint --ext .ts --fix ."
+    "lint": "eslint --ext .ts --fix .",
+    "precommit": "lint-staged"
+  },
+  "dependencies": {
+    "image-size": "0.8.3",
+    "loader-utils": "2.0.0",
+    "lodash": "4.17.19",
+    "mz": "2.7.0"
+  },
+  "devDependencies": {
+    "@types/loader-utils": "2.0.1",
+    "@types/lodash": "4.14.159",
+    "@types/mz": "2.7.1",
+    "autoprefixer": "9.8.6",
+    "css-loader": "4.2.1",
+    "css-mqpacker": "7.0.0",
+    "extract-text-webpack-plugin": "next",
+    "node-sass": "4.14.1",
+    "postcss-loader": "3.0.0",
+    "reset.css": "2.0.2",
+    "sass-loader": "9.0.3"
   }
 }

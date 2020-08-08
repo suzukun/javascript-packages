@@ -1,3 +1,1 @@
-import { iiLoader } from './src/lib/iiLoader';
-
-iiLoader();
+export { core } from './src/libs/core';

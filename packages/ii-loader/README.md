@@ -1,4 +1,4 @@
-# `iiLoader`
+# `ii-loader`
 
 > TODO: description
 
