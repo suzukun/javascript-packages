@@ -12,8 +12,14 @@ module.exports = {
         ecmaVersion: 2015,
         sourceType: "module",
     },
+    settings: {
+        "import/resolver": {
+            node: {
+                extensions: [".js", ".ts"],
+            },
+        },
+    },
     rules: {
-        "arrow-parens": [2, "as-needed"],
         "consistent-return": 0,
         curly: [1, "all"],
         "@typescript-eslint/explicit-member-accessibility": 2,
@@ -52,6 +58,7 @@ module.exports = {
         "prettier/prettier": [
             2,
             {
+                arrowParens: "avoid",
                 printWidth: 100,
                 semi: true,
                 singleQuote: true,

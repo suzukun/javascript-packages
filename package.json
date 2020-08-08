@@ -21,14 +21,12 @@
     "start": "lerna run --parallel start",
     "build": "lerna run build",
     "test": "lerna run --stream test",
-    "lint": "lerna run --stream lint"
-  },
-  "lint-staged": {
-    "*.ts": "eslint --ext .ts --fix ."
+    "lint": "lerna run --stream lint",
+    "precommit": "npm run lint"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "npm run precommit"
     }
   },
   "devDependencies": {
