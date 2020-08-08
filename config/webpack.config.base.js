@@ -6,6 +6,7 @@ const WebpackBar = require('webpackbar');
 module.exports = {
     mode: "production",
     entry: "./index.ts",
+    target: 'node',
     output: {
         filename: "index.js",
         path: path.resolve("./dist"),
