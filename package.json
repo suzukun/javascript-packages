@@ -21,12 +21,11 @@
     "start": "lerna run --parallel start",
     "build": "lerna run build",
     "test": "lerna run --stream test",
-    "lint": "lerna run --stream lint",
-    "precommit": "npm run lint"
+    "lint": "lerna run --stream lint"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run precommit"
+      "pre-commit": "lerna run --concurrency 1 --stream precommit --since HEAD --exclude-dependents"
     }
   },
   "devDependencies": {

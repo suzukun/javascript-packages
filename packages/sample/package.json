@@ -14,10 +14,17 @@
   "files": [
     "dist"
   ],
+  "lint-staged": {
+    "*.ts": [
+      "eslint --ext .ts --fix .",
+      "git add"
+    ]
+  },
   "scripts": {
     "start": "ts-node index.ts",
     "build": "webpack",
     "test": "jest --passWithNoTests",
-    "lint": "eslint --ext .ts --fix ."
+    "lint": "eslint --ext .ts --fix .",
+    "precommit": "lint-staged"
   }
 }
