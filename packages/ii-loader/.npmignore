@@ -1,0 +1,9 @@
+__tests__/
+src/
+
+.eslintignore
+.eslintrc.js
+index.ts
+jest.config.js
+tsconfig.json
+webpack.config.js
