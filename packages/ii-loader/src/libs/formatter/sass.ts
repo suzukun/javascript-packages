@@ -25,7 +25,7 @@ export const sass = (path: string, datas: Array<IData>) => {
         `${CONSTANTS.VARIABLE_IMAGE_DIR}: '${path}';`,
         concat([], [`${CONSTANTS.VARIABLE_IMAGE_MAP}: (`], firstFormat, [');']).join('\n'),
         mixins.sass,
-    ].join('\n\n');
+    ].join('\n');
 
     return secondFormat;
 };

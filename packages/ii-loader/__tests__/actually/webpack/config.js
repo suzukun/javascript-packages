@@ -1,7 +1,8 @@
 const path = require('path');
-const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
+    mode: 'development',
     entry: {
         'css/style.css': path.resolve(__dirname, '../scss/style.scss'),
     },
@@ -14,39 +15,41 @@ module.exports = {
         rules: [
             {
                 test: /\.scss$/,
-                use: ExtractTextWebpackPlugin.extract({
-                    use: [
-                        {
-                            loader: 'css-loader',
-                            options: {
-                                importLoaders: 2,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            url: false,
+                            importLoaders: 2,
+                        },
+                    },
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            config: {
+                                path: path.resolve(__dirname, './postcss.config.js'),
                             },
                         },
-                        {
-                            loader: 'postcss-loader',
-                            options: {
-                                config: {
-                                    path: path.resolve(__dirname, 'postcss.config.js'),
-                                },
-                            },
-                        },
-                        {
-                            loader: 'sass-loader',
-                            options: {
+                    },
+                    {
+                        loader: 'sass-loader',
+                        options: {
+                            sassOptions: {
                                 includePaths: [path.resolve(__dirname, '../scss')],
                             },
                         },
-                        {
-                            loader: './dist/index.js',
-                            options: {
-                                path: path.resolve(__dirname, '../img'),
-                                resolvePath: '/img',
-                            },
+                    },
+                    {
+                        loader: path.resolve(__dirname, '../../../dist/index.js'),
+                        options: {
+                            path: path.resolve(__dirname, '../img'),
+                            resolvePath: '/img',
                         },
-                    ],
-                }),
+                    },
+                ],
             },
         ],
     },
-    plugins: [new ExtractTextWebpackPlugin('[name]')],
+    plugins: [new MiniCssExtractPlugin({ filename: '[name]' })],
 };

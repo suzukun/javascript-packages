@@ -1,22 +1,18 @@
 import loaderUtils from 'loader-utils';
 import { assign } from 'lodash';
-import { loader } from 'webpack';
 import { searchFiles } from '../utils/searchFiles';
 import { formatter } from './formatter';
 import { extract } from './imageDataExtraction';
 
-export const core = async (self: loader.LoaderContext, source: string) => {
-    if (self.cacheable) {
-        self.cacheable();
-    }
-
+export async function core(source: string) {
     const options = assign(
         {
             path: '',
             resolvePath: '',
             test: /\.(jpe?g|png)/,
         },
-        loaderUtils.getOptions(self)
+        // @ts-ignore
+        loaderUtils.getOptions(this)
     );
     const files = await searchFiles(options.path, options.test);
     const imageData = await extract(options.path, options.resolvePath, files);
@@ -24,4 +20,4 @@ export const core = async (self: loader.LoaderContext, source: string) => {
     const result = [style, source].join('\n');
 
     return result;
-};
+}
