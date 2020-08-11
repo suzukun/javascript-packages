@@ -6,4 +6,5 @@ src/
 index.ts
 jest.config.js
 tsconfig.json
+typedoc.js
 webpack.config.js
