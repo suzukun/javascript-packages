@@ -25,6 +25,7 @@
     "build": "webpack",
     "test": "jest --passWithNoTests",
     "lint": "eslint --ext .ts --fix .",
+    "doc": "typedoc",
     "precommit": "lint-staged"
   },
   "dependencies": {
