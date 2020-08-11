@@ -19,7 +19,8 @@
     "start": "lerna run --parallel start",
     "build": "lerna run build",
     "test": "lerna run --stream test",
-    "lint": "lerna run --stream lint"
+    "lint": "lerna run --stream lint",
+    "doc": "lerna run --stream doc"
   },
   "husky": {
     "hooks": {
@@ -58,6 +59,7 @@
     "ts-loader": "8.0.2",
     "ts-node": "8.10.2",
     "tslib": "2.0.0",
+    "typedoc": "0.18.0",
     "typescript": "3.9.7",
     "webpack": "4.44.1",
     "webpack-cli": "3.3.12",

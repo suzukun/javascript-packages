@@ -1,0 +1,7 @@
+{
+  "mode": "file",
+  "includeDeclarations": true,
+  "excludeExternals": true,
+  "ignoreCompilerErrors": true,
+  "hideGenerator": true
+}
