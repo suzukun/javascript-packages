@@ -1,8 +1,8 @@
-const base = require('../../config/jest.config.base');
+const baseConfig = require('../../config/jest.config.base.json');
 const { name } = require('./package');
 
 module.exports = {
-    ...base,
+    ...baseConfig,
     name,
     displayName: name,
     rootDir: '../..',
