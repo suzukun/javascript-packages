@@ -1,6 +1,6 @@
 module.exports = {
-    extends: ["airbnb-base", "plugin:prettier/recommended"],
-    plugins: ["@typescript-eslint"],
+    extends: ["airbnb-base", "plugin:jsdoc/recommended", "plugin:prettier/recommended"],
+    plugins: ["@typescript-eslint", "jsdoc"],
     parser: "@typescript-eslint/parser",
     env: {
         browser: true,
@@ -46,6 +46,9 @@ module.exports = {
             },
         ],
         "import/prefer-default-export": 0,
+        "jsdoc/no-types": 1,
+        "jsdoc/require-param-type": 0,
+        "jsdoc/require-returns-type": 0,
         "no-console": 1,
         "no-debugger": 1,
         "no-underscore-dangle": [

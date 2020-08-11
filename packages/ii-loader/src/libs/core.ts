@@ -4,7 +4,11 @@ import { searchFiles } from '../utils/searchFiles';
 import { formatter } from './formatter';
 import { extract } from './imageDataExtraction';
 
-export async function core(source: string) {
+/**
+ * @param source source code
+ * @returns result
+ */
+export async function core(source: string): Promise<string> {
     const options = assign(
         {
             path: '',
