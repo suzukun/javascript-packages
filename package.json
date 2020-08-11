@@ -25,10 +25,14 @@
   },
   "husky": {
     "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "pre-commit": "lerna run --concurrency 1 --stream precommit --since HEAD --exclude-dependents"
     }
   },
   "devDependencies": {
+    "@commitlint/cli": "9.1.1",
+    "@commitlint/config-conventional": "9.1.1",
+    "@commitlint/config-lerna-scopes": "9.1.1",
     "@types/jest": "26.0.9",
     "@types/node": "14.0.27",
     "@typescript-eslint/eslint-plugin": "3.8.0",
@@ -42,7 +46,7 @@
     "eslint-plugin-import": "2.22.0",
     "eslint-plugin-prettier": "3.1.4",
     "fs-extra": "9.0.1",
-    "husky": "4.2.5",
+    "husky": "3.1.0",
     "jest": "26.2.2",
     "jest-transform-stub": "2.0.0",
     "lerna": "^3.22.1",
