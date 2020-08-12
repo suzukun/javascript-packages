@@ -21,11 +21,16 @@
     ]
   },
   "scripts": {
-    "start": "ts-node index.ts",
+    "start": "ts-node ./src/lib/cli.ts",
     "build": "webpack",
     "test": "jest --passWithNoTests",
     "lint": "eslint --ext .ts --fix .",
     "doc": "typedoc",
     "precommit": "lint-staged"
+  },
+  "dependencies": {
+    "consola": "2.15.0",
+    "lodash": "4.17.19",
+    "mz": "2.7.0"
   }
 }

@@ -1,3 +1,1 @@
-import { yourProjectDetail } from './src/lib/yourProjectDetail';
-
-yourProjectDetail();
+export { FileChecker } from './src/lib/FileChecker';
