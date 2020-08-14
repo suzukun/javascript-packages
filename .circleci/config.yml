@@ -8,19 +8,24 @@ executors:
   default:
     working_directory: ~/workspace
     docker:
-      - image: circleci/node:12.16.1
+      -
+        image: circleci/node:12.16.1
 
 commands:
   restore_dependencies:
     steps:
-      - restore_cache:
-        key: dependency-cache-{{ checksum "yarn.lock" }}
+      -
+        restore_cache:
+          key: dependency-cache-{{ checksum "yarn.lock" }}
+
   save_dependencies:
     steps:
-      - save_cache:
-        key: dependency-cache-{{ checksum "yarn.lock" }}
-        paths:
-          - ./node_modules
+      -
+        save_cache:
+          key: dependency-cache-{{ checksum "yarn.lock" }}
+          paths:
+            -
+              ./node_modules
 
 jobs:
   doc:
@@ -36,7 +41,8 @@ workflows:
   version: 2
   test:
     jobs:
-      - test:
+      -
+        test:
           filters:
             branches:
               only:
