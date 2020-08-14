@@ -42,7 +42,7 @@ workflows:
   test:
     jobs:
       -
-        test:
+        doc:
           filters:
             branches:
               only:
