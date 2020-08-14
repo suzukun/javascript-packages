@@ -10,12 +10,27 @@ executors:
     docker:
       - image: circleci/node:12.16.1
 
+commands:
+  restore_dependencies:
+    steps:
+      - restore_cache:
+        key: dependency-cache-{{ checksum "yarn.lock" }}
+  save_dependencies:
+    steps:
+      - save_cache:
+        key: dependency-cache-{{ checksum "yarn.lock" }}
+        paths:
+          - ./node_modules
+
 jobs:
-  test:
+  doc:
     executor: default
     steps:
       - checkout
-      - run: npm run test
+      - restore_dependencies
+      - run: npm install
+      - save_dependencies
+      - npm: npm run doc
 
 workflows:
   version: 2
