@@ -35,7 +35,7 @@ jobs:
       - restore_dependencies
       - run: npm install
       - save_dependencies
-      - npm: npm run doc
+      - run: npm run doc
 
 workflows:
   version: 2
