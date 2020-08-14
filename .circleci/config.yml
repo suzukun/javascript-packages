@@ -11,7 +11,7 @@ executors:
       - image: circleci/node:12.16.1
 
 jobs:
-  - test:
+  test:
     executor: default
     steps:
       - checkout
