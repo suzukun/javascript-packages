@@ -11,7 +11,18 @@ executors:
       - image: circleci/node:12.16.1
 
 jobs:
-  executor: default
-  steps:
-    - checkout
-    - run: npm run test
+  - test:
+    executor: default
+    steps:
+      - checkout
+      - run: npm run test
+
+workflows:
+  version: 2
+  test:
+    jobs:
+      - test:
+          filters:
+            branches:
+              only:
+                - develop
