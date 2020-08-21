@@ -1,0 +1,31 @@
+{
+  "private": true,
+  "name": "your-annotations",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "Ryota Suzuki",
+  "homepage": "",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "directories": {
+    "src": "src",
+    "test": "__tests__"
+  },
+  "files": [
+    "dist"
+  ],
+  "lint-staged": {
+    "*.ts": [
+      "eslint --ext .ts --fix .",
+      "git add"
+    ]
+  },
+  "scripts": {
+    "start": "ts-node index.ts",
+    "build": "webpack",
+    "test": "jest --passWithNoTests",
+    "lint": "eslint --ext .ts --fix .",
+    "doc": "typedoc",
+    "precommit": "lint-staged"
+  }
+}
