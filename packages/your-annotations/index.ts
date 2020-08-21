@@ -1,3 +1,3 @@
-import { yourAnnotations } from './src/lib/yourAnnotations';
+import { yourAnnotations } from './src/lib/sample';
 
 yourAnnotations();
