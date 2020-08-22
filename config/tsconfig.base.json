@@ -9,6 +9,7 @@
     // "downlevelIteration": true,
     "esModuleInterop": true,
     "declaration": true,
+    "declarationMap": true,
     // NOTE: needs tslib.
     "importHelpers": true,
     "resolveJsonModule": true,
