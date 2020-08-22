@@ -1,11 +1,12 @@
 {
   "private": true,
-  "name": "sample",
-  "version": "1.0.0",
+  "name": "gl-image-adjuster",
+  "version": "1.2.0",
   "description": "> TODO: description",
   "author": "Ryota Suzuki",
   "license": "MIT",
   "main": "./dist/index.js",
+  "bin": "bin/gl-image-adjuster",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/suzukun/javascript-packages.git"
@@ -13,7 +14,7 @@
   "bugs": {
     "url": "https://github.com/suzukun/javascript-packages/issues"
   },
-  "homepage": "https://github.com/suzukun/javascript-packages/tree/develop/packages/sample#readme",
+  "homepage": "https://github.com/suzukun/javascript-packages/tree/develop/packages/gl-image-adjuster#readme",
   "files": [
     "dist"
   ],
@@ -25,10 +26,18 @@
   },
   "scripts": {
     "start": "ts-node index.ts",
-    "build": "webpack",
+    "build": "tsc",
     "test": "jest --passWithNoTests",
     "lint": "eslint --ext .ts --fix .",
     "doc": "typedoc",
     "precommit": "lint-staged"
+  },
+  "devDependencies": {
+    "@types/async": "3.2.3",
+    "@types/gm": "1.18.9",
+    "async": "3.2.0",
+    "chalk": "4.1.0",
+    "commander": "6.0.0",
+    "gm": "1.23.1"
   }
 }
