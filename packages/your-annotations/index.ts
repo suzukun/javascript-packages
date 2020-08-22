@@ -1,3 +1,1 @@
-import { yourAnnotations } from './src/lib/sample';
-
-yourAnnotations();
+export { CheckAnnotations } from './src/libs/CheckAnnotations';
