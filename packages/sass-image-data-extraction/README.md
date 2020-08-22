@@ -2,6 +2,14 @@
 
 > TODO: description
 
+## install
+
+### from npm
+
+```
+npm install sass-image-data-extraction
+```
+
 ## Usage
 
 ```

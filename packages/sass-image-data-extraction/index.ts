@@ -1,3 +1,1 @@
-import { sassImageDataExtraction } from './src/libs/sassImageDataExtraction';
-
-sassImageDataExtraction();
+export { ImageDataExtraction } from './src/libs/ImageDataExtraction';
