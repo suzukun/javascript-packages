@@ -3,7 +3,7 @@ import readline from 'readline';
 import commentRegex from 'comment-regex';
 import { each, map, mapKeys, mapValues, keys, assign, toUpper } from 'lodash';
 import fs from 'mz/fs';
-import { searchFiles } from './searchFiles';
+import { searchFiles } from '../utils/searchFiles';
 
 type CheckAnnotationsOptions<T> = {
     src: string;
