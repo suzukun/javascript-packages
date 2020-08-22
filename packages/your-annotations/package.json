@@ -1,12 +1,20 @@
 {
   "private": true,
   "name": "your-annotations",
-  "version": "1.0.0",
+  "version": "1.4.0",
   "description": "> TODO: description",
   "author": "Ryota Suzuki",
-  "homepage": "",
   "license": "MIT",
   "main": "./dist/index.js",
+  "bin": "bin/your-annotations",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suzukun/javascript-packages.git"
+  },
+  "bugs": {
+    "url": "https://github.com/suzukun/javascript-packages/issues"
+  },
+  "homepage": "https://github.com/suzukun/javascript-packages/tree/develop/packages/your-annotations#readme",
   "directories": {
     "src": "src",
     "test": "__tests__"
@@ -22,10 +30,20 @@
   },
   "scripts": {
     "start": "ts-node index.ts",
-    "build": "webpack",
+    "build": "tsc",
     "test": "jest --passWithNoTests",
     "lint": "eslint --ext .ts --fix .",
     "doc": "typedoc",
     "precommit": "lint-staged"
+  },
+  "devDependencies": {
+    "chalk": "4.1.0",
+    "commander": "6.0.0",
+    "comment-regex": "1.0.1",
+    "consola": "2.15.0",
+    "lodash": "4.17.20",
+    "mkdirp-promise": "5.0.1",
+    "mz": "2.7.0",
+    "qoa": "0.2.0"
   }
 }

@@ -3093,6 +3093,11 @@ comment-parser@^0.7.6:
   resolved "https://registry.npmjs.org/comment-parser/-/comment-parser-0.7.6.tgz#0e743a53c8e646c899a1323db31f6cd337b10f12"
   integrity sha512-GKNxVA7/iuTnAqGADlTWX4tkhzxZKXp5fLJqKTlQLHkE65XDUKutZ3BHaJC5IGcper2tT3QRD1xr4o3jNpgXXg==
 
+comment-regex@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/comment-regex/-/comment-regex-1.0.1.tgz#e070d2c4db33231955d0979d27c918fcb6f93565"
+  integrity sha512-IWlN//Yfby92tOIje7J18HkNmWRR7JESA/BK8W7wqY/akITpU5B0JQWnbTjCfdChSrDNb0DrdA9jfAxiiBXyiQ==
+
 commondir@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npmjs.org/commondir/-/commondir-1.0.1.tgz#ddd800da0c66127393cca5950ea968a3aaf1253b"
@@ -6837,7 +6842,7 @@ mixin-deep@^1.2.0:
     for-in "^1.0.2"
     is-extendable "^1.0.1"
 
-mkdirp-promise@^5.0.1:
+mkdirp-promise@5.0.1, mkdirp-promise@^5.0.1:
   version "5.0.1"
   resolved "https://registry.npmjs.org/mkdirp-promise/-/mkdirp-promise-5.0.1.tgz#e9b8f68e552c68a9c1713b84883f7a1dd039b8a1"
   integrity sha1-6bj2jlUsaKnBcTuEiD96HdA5uKE=
@@ -8025,6 +8030,11 @@ q@^1.5.1:
   version "1.5.1"
   resolved "https://registry.npmjs.org/q/-/q-1.5.1.tgz#7e32f75b41381291d04611f1bf14109ac00651d7"
   integrity sha1-fjL3W0E4EpHQRhHxvxQQmsAGUdc=
+
+qoa@0.2.0:
+  version "0.2.0"
+  resolved "https://registry.npmjs.org/qoa/-/qoa-0.2.0.tgz#2e4ea56a388982da570bf2025733b72e2f857aab"
+  integrity sha512-svEO3uevNU354fUBWgMxGJH0spF29EZRe140YL20PP+5C25V+u0eMeFforSIiop2879uXgxI+IFwibHBGcseEA==
 
 qs@~6.5.2:
   version "6.5.2"
