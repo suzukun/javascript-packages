@@ -2,7 +2,7 @@ import { EventEmitter } from 'events';
 import path from 'path';
 import async, { ErrorCallback } from 'async';
 import gm, { ImageInfo, State } from 'gm';
-import mkdirp from 'mkdirp-promise';
+import { asyncMkdir } from '../utils/asyncMkdir';
 import { nearPow2 } from '../utils/calc';
 
 type GLImageAdjusterOptions = {
@@ -77,7 +77,7 @@ export class GLImageAdjuster extends EventEmitter {
         }
 
         Promise.resolve()
-            .then(() => mkdirp(dist))
+            .then(() => asyncMkdir(dist))
             .then(() => ({
                 resolve,
                 filledWidth,
