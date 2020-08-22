@@ -1,3 +1,1 @@
-import { glImageAdjuster } from './src/libs/glImageAdjuster';
-
-glImageAdjuster();
+export { GLImageAdjuster } from './src/libs/GLImageAdjuster';
