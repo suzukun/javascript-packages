@@ -1,3 +1,3 @@
-import { sample } from './src/lib/sample';
+import { sample } from './src/libs/sample';
 
 sample();

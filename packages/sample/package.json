@@ -4,13 +4,16 @@
   "version": "1.0.0",
   "description": "> TODO: description",
   "author": "Ryota Suzuki",
-  "homepage": "",
   "license": "MIT",
   "main": "./dist/index.js",
-  "directories": {
-    "src": "src",
-    "test": "__tests__"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suzukun/javascript-packages.git"
   },
+  "bugs": {
+    "url": "https://github.com/suzukun/javascript-packages/issues"
+  },
+  "homepage": "",
   "files": [
     "dist"
   ],

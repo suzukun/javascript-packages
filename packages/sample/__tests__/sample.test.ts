@@ -1,4 +1,4 @@
-import { sample } from '../src/lib/sample';
+import { sample } from '../src/libs/sample';
 
 describe('sample', () => {
     test('sample is function', () => {
