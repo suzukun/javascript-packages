@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "basics::createPackage": "node ./tools/createPackage.js -t",
-    "basics::version": "lerna version --conventional-commits",
+    "basics::version": "lerna version --conventional-commits --no-private",
     "basics::publish": "lerna publish from-package --yes",
     "basics::install": "yarn add -W",
     "basics::installDevelop": "yarn add -W --dev",
