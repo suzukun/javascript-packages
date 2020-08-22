@@ -1,6 +1,6 @@
 import chalk, { Color } from 'chalk';
 import { Command } from 'commander';
-import { Consola } from 'consola';
+import consola from 'consola';
 import { each, keys, pad, padStart, padEnd, sum } from 'lodash';
 import { Annotations, REG_EXP, ANNOTATIONS } from '../constants';
 import { CheckAnnotations } from '../libs/CheckAnnotations';
@@ -16,8 +16,6 @@ const MARK = {
     SUCCESS: chalk.green('✓'),
     FAILED: chalk.magenta('×'),
 };
-
-const consola = new Consola({});
 
 const viewHelp = () => {
     each(ANNOTATIONS, (annotation, name) => {
@@ -121,7 +119,7 @@ const viewAnnotations = (param: Options) => {
     });
 
     checkAnnotations.on('end', () => {
-        consola.info(`your-annotations.`);
+        consola.log(`${chalk.green('end   ')}your-annotations.`);
     });
 
     checkAnnotations.on('error', file => {
