@@ -3,7 +3,6 @@ src/
 
 .eslintignore
 .eslintrc.js
-CHANGELOG.md
 index.ts
 jest.config.js
 tsconfig.json
