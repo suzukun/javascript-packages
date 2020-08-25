@@ -47,7 +47,7 @@
     "eslint-plugin-prettier": "3.1.4",
     "fs-extra": "9.0.1",
     "husky": "3.1.0",
-    "jest": "26.4.1",
+    "jest": "26.4.2",
     "jest-transform-stub": "2.0.0",
     "lerna": "^3.22.1",
     "lint-staged": "10.2.11",
