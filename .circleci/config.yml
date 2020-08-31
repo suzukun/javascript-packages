@@ -50,7 +50,11 @@ workflows:
   test:
     jobs:
       -
-        test
+        test:
+          filters:
+            branches:
+              ignore:
+                - develop
   doc:
     jobs:
       -
