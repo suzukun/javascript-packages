@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "@types/loader-utils": "2.0.1",
-    "@types/lodash": "4.14.160",
+    "@types/lodash": "4.14.161",
     "@types/mz": "2.7.1",
     "autoprefixer": "9.8.6",
     "css-loader": "4.2.2",
