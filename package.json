@@ -50,7 +50,7 @@
     "jest": "26.4.2",
     "jest-transform-stub": "2.0.0",
     "lerna": "^3.22.1",
-    "lint-staged": "10.3.0",
+    "lint-staged": "10.4.0",
     "prettier": "2.1.1",
     "rehack": "1.4.1",
     "rimraf": "3.0.2",
