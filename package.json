@@ -54,7 +54,7 @@
     "prettier": "2.1.1",
     "rehack": "1.4.1",
     "rimraf": "3.0.2",
-    "terser-webpack-plugin": "4.2.0",
+    "terser-webpack-plugin": "4.2.2",
     "ts-jest": "26.3.0",
     "ts-loader": "8.0.3",
     "ts-node": "9.0.0",
