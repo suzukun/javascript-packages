@@ -12,6 +12,12 @@ executors:
         image: circleci/node:12.16.1
 
 commands:
+  setup_git_config:
+    steps:
+      -
+        run: git config --global user.email "circleci@example.com"
+        run: git config --global user.name "circleci"
+
   restore_dependencies:
     steps:
       -
@@ -44,6 +50,10 @@ jobs:
       - run: npm install
       - save_dependencies
       - run: npm run doc
+      - setup_git_config
+      - run: git add docs
+      - run: git commit -m "build"
+      - run: git push origin $CIRCLE_BRANCH
 
 workflows:
   version: 2
