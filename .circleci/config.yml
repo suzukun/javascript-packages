@@ -15,7 +15,7 @@ commands:
   setup_git_config:
     steps:
       - add_ssh_keys:
-          fingerprints: $FINGERPRINTS
+          fingerprints: "64:b4:26:2b:dc:7b:7a:24:17:98:bd:cd:ac:7d:b4:ea"
       - run: git config --global user.email "circleci@example.com"
       - run: git config --global user.name "circleci"
   restore_dependencies:
