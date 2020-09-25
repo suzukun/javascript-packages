@@ -14,15 +14,15 @@ executors:
 commands:
   setup_git_config:
     steps:
+      - add_ssh_keys:
+          fingerprints: $FINGERPRINTS
       - run: git config --global user.email "circleci@example.com"
       - run: git config --global user.name "circleci"
-
   restore_dependencies:
     steps:
       -
         restore_cache:
           key: dependency-cache-{{ checksum "yarn.lock" }}
-
   save_dependencies:
     steps:
       -
