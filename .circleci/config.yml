@@ -51,7 +51,7 @@ jobs:
       - run: npm run doc
       - setup_git_config
       - run: git add docs
-      - run: git commit -m "build"
+      - run: git commit -m "[ci skip] build"
       - run: git push origin $CIRCLE_BRANCH
 
 workflows:
