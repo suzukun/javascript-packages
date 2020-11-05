@@ -39,7 +39,7 @@
     "@types/lodash": "4.14.164",
     "@types/mz": "2.7.2",
     "autoprefixer": "9.8.6",
-    "css-loader": "5.0.0",
+    "css-loader": "5.0.1",
     "css-mqpacker": "7.0.0",
     "mini-css-extract-plugin": "1.2.1",
     "node-sass": "5.0.0",
