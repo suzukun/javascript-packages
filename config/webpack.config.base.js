@@ -1,12 +1,12 @@
 const path = require("path");
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const TerserWebpackPlugin = require('terser-webpack-plugin');
-const WebpackBar = require('webpackbar');
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const TerserWebpackPlugin = require("terser-webpack-plugin");
+const WebpackBar = require("webpackbar");
 
 module.exports = {
     mode: "production",
     entry: "./index.ts",
-    target: 'node',
+    target: "node",
     output: {
         filename: "index.js",
         path: path.resolve("./dist"),
@@ -32,7 +32,7 @@ module.exports = {
         ],
     },
     resolve: {
-        extensions: [".js", ".ts", '.json', '*'],
+        extensions: [".js", ".ts", ".json", "*"],
     },
     plugins: [new WebpackBar(), new CleanWebpackPlugin()],
 };

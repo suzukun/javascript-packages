@@ -1,0 +1,38 @@
+{
+  "private": true,
+  "name": "spencer",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "Ryota Suzuki",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suzukun/javascript-packages.git"
+  },
+  "bugs": {
+    "url": "https://github.com/suzukun/javascript-packages/issues"
+  },
+  "homepage": "https://github.com/suzukun/javascript-packages/tree/develop/packages/spencer#readme",
+  "files": [
+    "dist"
+  ],
+  "lint-staged": {
+    "*.ts": [
+      "eslint --ext .ts --fix .",
+      "git add"
+    ]
+  },
+  "scripts": {
+    "start": "webpack serve --inline",
+    "build": "webpack",
+    "test": "jest --passWithNoTests",
+    "lint": "eslint --ext .ts --fix .",
+    "doc": "typedoc",
+    "precommit": "lint-staged"
+  },
+  "devDependencies": {
+    "raw-loader": "4.0.2",
+    "webpack-dev-server": "3.11.0"
+  }
+}
