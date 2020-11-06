@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "lund",
+  "name": "spencer",
   "version": "1.0.0",
   "description": "> TODO: description",
   "author": "Ryota Suzuki",
@@ -13,7 +13,7 @@
   "bugs": {
     "url": "https://github.com/suzukun/javascript-packages/issues"
   },
-  "homepage": "https://github.com/suzukun/javascript-packages/tree/develop/packages/lund#readme",
+  "homepage": "https://github.com/suzukun/javascript-packages/tree/develop/packages/spencer#readme",
   "files": [
     "dist"
   ],
