@@ -1,22 +1,20 @@
+const DEFAULT_IDENTIFIER = '__NONE_IDENTIFIER__';
+
 type Shader = string;
 
-type Shaders = {
-    [key: string]: Shader;
+type Shaders<T extends string> = {
+    [key in T]: Shader;
 };
 
-type ShadersTree = {
-    [key: string]: Shaders;
+type ShadersTree<T extends string, U extends string> = {
+    [key in U | typeof DEFAULT_IDENTIFIER]: Shaders<T>;
 };
-
-const DEFAULT_IDENTIFIER = '__NONE_IDENTIFIER__';
 
 /**
  * シェーダーモジュール解決クラス。
  */
-export class Spencer {
-    private static _singleton: Spencer;
-
-    private _shadersTree: ShadersTree = {};
+export class Spencer<TNames extends string, TIdentifiers extends string> {
+    private _shadersTree: ShadersTree<TNames, TIdentifiers>;
 
     private _importMarker: string = 'import';
 
@@ -25,19 +23,18 @@ export class Spencer {
         'gm'
     );
 
-    public static get singleton() {
-        if (!this._singleton) {
-            this._singleton = new this();
-        }
-
-        return this._singleton;
+    public constructor(shadersTree: ShadersTree<TNames, TIdentifiers>) {
+        this._shadersTree = shadersTree;
     }
 
     public static createMessage(text: string) {
         return `Spencer: ${text}`;
     }
 
-    public get(name: string, identifier: string = DEFAULT_IDENTIFIER): string {
+    public get(
+        name: TNames,
+        identifier: TIdentifiers | typeof DEFAULT_IDENTIFIER = DEFAULT_IDENTIFIER
+    ): string {
         if (!this._checkShaderExistence(name, identifier)) {
             return `#log not found ${identifier} <${name.replace(/\r?\n/g, '')}>`;
         }
@@ -52,23 +49,17 @@ export class Spencer {
         );
     }
 
-    public set(name: string, shader: Shader, identifier: string = DEFAULT_IDENTIFIER) {
-        if (this._checkShaderExistence(name, identifier)) {
-            throw new Error(Spencer.createMessage(`${name} には、すでに登録されています。`));
-        }
-
-        if (!this._shadersTree[identifier]) {
-            this._shadersTree[identifier] = {};
-        }
-
-        this._shadersTree[identifier][name] = shader;
-    }
-
-    private _checkShaderExistence(name: string, identifier: string) {
+    private _checkShaderExistence(
+        name: TNames,
+        identifier: TIdentifiers | typeof DEFAULT_IDENTIFIER
+    ) {
         return this._shadersTree[identifier] && this._shadersTree[identifier][name];
     }
 
-    private _replacer(name: string, identifier: string = DEFAULT_IDENTIFIER): string {
+    private _replacer(
+        name: TNames,
+        identifier: TIdentifiers | typeof DEFAULT_IDENTIFIER = DEFAULT_IDENTIFIER
+    ): string {
         if (!this._checkShaderExistence(name, identifier)) {
             throw new Error(
                 Spencer.createMessage(
