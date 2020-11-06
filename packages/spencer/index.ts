@@ -1,3 +1,1 @@
-import { Spencer } from './src/libs/Spencer';
-
-console.log(Spencer.singleton);
+export { Spencer } from './src/libs/Spencer';
