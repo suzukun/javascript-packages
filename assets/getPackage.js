@@ -1,6 +1,6 @@
-{
+module.exports.getPackage = (name) => `{
   "private": true,
-  "name": "sample",
+  "name": "${name}",
   "version": "1.0.0",
   "description": "> TODO: description",
   "author": "Ryota Suzuki",
@@ -13,7 +13,7 @@
   "bugs": {
     "url": "https://github.com/suzukun/javascript-packages/issues"
   },
-  "homepage": "https://github.com/suzukun/javascript-packages/tree/develop/packages/sample#readme",
+  "homepage": "https://github.com/suzukun/javascript-packages/tree/develop/packages/${name}#readme",
   "files": [
     "dist"
   ],
@@ -32,3 +32,4 @@
     "precommit": "lint-staged"
   }
 }
+`;

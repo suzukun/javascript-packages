@@ -1,4 +1,4 @@
-__tests__/
+module.exports.getNPMIgnore = () => `__tests__/
 src/
 
 .eslintignore
@@ -8,3 +8,4 @@ jest.config.js
 tsconfig.json
 typedoc.js
 webpack.config.js
+`;
