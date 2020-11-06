@@ -1,4 +1,6 @@
-module.exports.getIndexCode = (name) => `import { ${name} } from './src/libs/${name}';
+const { toCamelCase } = require("./utils/toCamelCase");
 
-${name}();
+module.exports.getIndexCode = (name) => `import { ${toCamelCase(name)} } from './src/libs/${toCamelCase(name)}';
+
+${toCamelCase(name)}();
 `;

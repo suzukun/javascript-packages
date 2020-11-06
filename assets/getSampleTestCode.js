@@ -1,8 +1,10 @@
-module.exports.getSampleTestCode = (name) => `import { ${name} } from '../src/libs/${name}';
+const { toCamelCase } = require("./utils/toCamelCase");
 
-describe('${name}', () => {
-    test('${name} is function', () => {
-        expect(typeof ${name}).toBe('function');
+module.exports.getSampleTestCode = (name) => `import { ${toCamelCase(name)} } from '../src/libs/${toCamelCase(name)}';
+
+describe('${toCamelCase(name)}', () => {
+    test('${toCamelCase(name)} is function', () => {
+        expect(typeof ${toCamelCase(name)}).toBe('function');
     });
 });
 `;
