@@ -4,7 +4,11 @@ type Shaders = {
     [key: string]: Shader;
 };
 
-const IMPORT_PATTERN = /^[ \t]*#import +<([\w\d./]+)>/gm;
+type ShadersTree = {
+    [key: string]: Shaders;
+};
+
+const DEFAULT_IDENTIFIER = '__NONE_IDENTIFIER__';
 
 /**
  * シェーダーモジュール解決クラス。
@@ -12,7 +16,14 @@ const IMPORT_PATTERN = /^[ \t]*#import +<([\w\d./]+)>/gm;
 export class Spencer {
     private static _singleton: Spencer;
 
-    private _shaders: Shaders = {};
+    private _shadersTree: ShadersTree = {};
+
+    private _importMarker: string = 'import';
+
+    private _importPattern: RegExp = new RegExp(
+        `^[\\s\\t]*#${this._importMarker}\\s+(([\\w\\d./]+)\\s+)?<([\\w\\d./]+)>`,
+        'gm'
+    );
 
     public static get singleton() {
         if (!this._singleton) {
@@ -26,35 +37,48 @@ export class Spencer {
         return `Spencer: ${text}`;
     }
 
-    public get(name: string) {
-        if (!this._shaders[name]) {
-            return `#log not found <${name}>`;
+    public get(name: string, identifier: string = DEFAULT_IDENTIFIER): string {
+        if (!this._checkShaderExistence(name, identifier)) {
+            return `#log not found ${identifier} <${name.replace(/\r?\n/g, '')}>`;
         }
 
-        this._shaders[name].replace(IMPORT_PATTERN, (substring: string, ...args) => {
-            if (typeof args[0] === 'string') {
-                return this._replacer(args[0]) || '';
-            }
+        return this._shadersTree[identifier][name].replace(
+            this._importPattern,
+            (substring: string, ...args) => {
+                const [, moduleIdentifier, moduleName] = args;
 
-            return '';
-        });
+                return this._replacer(moduleName, moduleIdentifier);
+            }
+        );
     }
 
-    public set(name: string, shader: Shader, isForce: boolean = false) {
-        if (this._shaders[name] && !isForce) {
+    public set(name: string, shader: Shader, identifier: string = DEFAULT_IDENTIFIER) {
+        if (this._checkShaderExistence(name, identifier)) {
             throw new Error(Spencer.createMessage(`${name} には、すでに登録されています。`));
         }
 
-        this._shaders[name] = shader;
-    }
-
-    private _replacer(name: string) {
-        const shader = this._shaders[name];
-
-        if (!shader) {
-            throw new Error(Spencer.createMessage(`${name} は、登録されていません。`));
+        if (!this._shadersTree[identifier]) {
+            this._shadersTree[identifier] = {};
         }
 
-        return this.get(shader);
+        this._shadersTree[identifier][name] = shader;
+    }
+
+    private _checkShaderExistence(name: string, identifier: string) {
+        return this._shadersTree[identifier] && this._shadersTree[identifier][name];
+    }
+
+    private _replacer(name: string, identifier: string = DEFAULT_IDENTIFIER): string {
+        if (!this._checkShaderExistence(name, identifier)) {
+            throw new Error(
+                Spencer.createMessage(
+                    `${
+                        identifier === DEFAULT_IDENTIFIER ? '' : `${identifier} `
+                    }${name} は、登録されていません。`
+                )
+            );
+        }
+
+        return this.get(name, identifier) || '';
     }
 }
