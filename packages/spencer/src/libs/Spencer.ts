@@ -27,6 +27,10 @@ export class Spencer<TNames extends string, TIdentifiers extends string> {
         this._shadersTree = shadersTree;
     }
 
+    public static get COMMON_SHADER() {
+        return DEFAULT_IDENTIFIER;
+    }
+
     public static createMessage(text: string) {
         return `Spencer: ${text}`;
     }
