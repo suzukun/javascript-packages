@@ -1,7 +1,10 @@
 {
   "extends": "../../config/tsconfig.base.json",
   "compilerOptions": {
-    "outDir": "dist"
+    "outDir": "dist",
+    "declarationMap": false,
+    "importHelpers": false,
+    "sourceMap": false
   },
   "exclude": ["dist/**/*"]
 }
