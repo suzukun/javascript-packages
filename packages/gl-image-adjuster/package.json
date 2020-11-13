@@ -32,7 +32,7 @@
     "precommit": "lint-staged"
   },
   "devDependencies": {
-    "@types/async": "3.2.3",
+    "@types/async": "3.2.4",
     "@types/gm": "1.18.9",
     "async": "3.2.0",
     "chalk": "4.1.0",
