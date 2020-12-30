@@ -33,6 +33,6 @@
   },
   "devDependencies": {
     "raw-loader": "4.0.2",
-    "webpack-dev-server": "3.11.0"
+    "webpack-dev-server": "3.11.1"
   }
 }
