@@ -38,7 +38,7 @@
     "@typescript-eslint/parser": "3.10.1",
     "chalk": "4.1.0",
     "clean-webpack-plugin": "3.0.0",
-    "commander": "6.2.1",
+    "commander": "7.0.0",
     "eslint": "7.18.0",
     "eslint-config-airbnb-base": "14.2.1",
     "eslint-config-prettier": "7.1.0",
