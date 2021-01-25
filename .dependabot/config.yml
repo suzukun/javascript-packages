@@ -7,6 +7,14 @@ update_configs:
     ignored_updates:
       - match:
           dependency_name: "husky"
+      - match:
+          dependency_name: "typedoc"
+      - match:
+          dependency_name: "typescript"
+      - match:
+          dependency_name: "@typescript-eslint/eslint-plugin"
+      - match:
+          dependency_name: "@typescript-eslint/parser"
     automerged_updates:
       - match:
           dependency_type: "development"
