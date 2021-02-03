@@ -39,7 +39,7 @@
     "chalk": "4.1.0",
     "commander": "7.0.0",
     "comment-regex": "1.0.1",
-    "consola": "2.15.0",
+    "consola": "2.15.1",
     "lodash": "4.17.20",
     "mkdirp-promise": "5.0.1",
     "mz": "2.7.0",
