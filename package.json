@@ -61,7 +61,7 @@
     "textlint-rule-preset-ja-technical-writing": "4.0.1",
     "textlint-rule-spellcheck-tech-word": "5.0.0",
     "ts-jest": "26.5.0",
-    "ts-loader": "8.0.14",
+    "ts-loader": "8.0.15",
     "ts-node": "9.1.1",
     "tslib": "2.1.0",
     "typedoc": "0.19.2",
