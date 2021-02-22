@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "consola": "2.15.3",
-    "lodash": "4.17.20",
+    "lodash": "4.17.21",
     "mz": "2.7.0"
   }
 }
