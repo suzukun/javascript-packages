@@ -11,11 +11,12 @@ type Result = {
     /* ><><><><><><><><><><>< *\
         Option
     \* ><><><><><><><><><><>< */
-    const { args, dist, resize, center } = new Command()
+    const { args, opts } = new Command()
         .option('-d, --dist <name>', 'dist dir', 'dist')
         .option('-r, --resize <name>', 'use resize', true)
         .option('-c, --center <name>', 'fixed center', true)
         .parse(process.argv);
+    const { dist, resize, center } = opts();
 
     /* ><><><><><><><><><><>< *\
         Instance

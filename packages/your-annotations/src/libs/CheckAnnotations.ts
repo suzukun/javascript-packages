@@ -1,4 +1,5 @@
 import { EventEmitter } from 'events';
+import { ReadStream } from 'fs';
 import readline from 'readline';
 import commentRegex from 'comment-regex';
 import { each, map, mapKeys, mapValues, keys, assign, toUpper } from 'lodash';
@@ -107,7 +108,7 @@ export class CheckAnnotations<TAnnotations> extends EventEmitter {
         }
     }
 
-    private _readAnnotations(code: NodeJS.ReadableStream): Promise<Results> {
+    private _readAnnotations(code: ReadStream): Promise<Results> {
         return new Promise(resolve => {
             const result: Results = {};
             const extractAnnotationRegExp = new RegExp(

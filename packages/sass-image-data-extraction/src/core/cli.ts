@@ -15,11 +15,12 @@ const WATCHER_OPTION = {
     /* ><><><><><><><><><><>< *\
         Option
     \* ><><><><><><><><><><>< */
-    const { args, dist, fileName, watch } = new Command()
+    const { args, opts } = new Command()
         .option('-d, --dist <name>', 'dist dir', 'dist')
         .option('-f, --file-name <name>', 'file name', SASS_FILE_NAME)
         .option('-w, --watch', 'use watch mode', false)
         .parse(process.argv);
+    const { dist, fileName, watch } = opts();
 
     const options: ImageDataExtractionOptions = {
         dist,
@@ -66,14 +67,18 @@ const WATCHER_OPTION = {
     /* ><><><><><><><><><><>< *\
         Function
     \* ><><><><><><><><><><>< */
-    const extract = (opts: { path?: string; eventName?: string; isRemove?: boolean } = {}) => {
-        if (opts.path) {
-            imageDataExtraction.emit(opts.eventName ?? '', { file: opts.path });
+    const extract = ({
+        path,
+        eventName,
+        isRemove,
+    }: { path?: string; eventName?: string; isRemove?: boolean } = {}) => {
+        if (path) {
+            imageDataExtraction.emit(eventName ?? '', { file: path });
 
-            if (opts.isRemove) {
-                imageDataExtraction.remove(opts.path);
-            } else if (!imageDataExtraction.includes(opts.path)) {
-                imageDataExtraction.add(opts.path);
+            if (isRemove) {
+                imageDataExtraction.remove(path);
+            } else if (!imageDataExtraction.includes(path)) {
+                imageDataExtraction.add(path);
             }
         }
 
