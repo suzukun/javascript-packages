@@ -1,7 +1,5 @@
 {
-  "mode": "file",
-  "includeDeclarations": true,
+  "entryPoints": ["./index.ts"],
   "excludeExternals": true,
-  "ignoreCompilerErrors": true,
   "hideGenerator": true
 }

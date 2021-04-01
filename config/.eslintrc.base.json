@@ -29,6 +29,7 @@
     "@typescript-eslint/explicit-member-accessibility": 2,
     "@typescript-eslint/no-unnecessary-type-assertion": 2,
     "@typescript-eslint/no-explicit-any": 2,
+    "@typescript-eslint/no-redeclare": 2,
     "@typescript-eslint/no-unused-vars": 2,
     "import/extensions": 0,
     "import/no-duplicates": 0,
@@ -53,6 +54,7 @@
     "jsdoc/require-returns-type": 0,
     "no-console": 1,
     "no-debugger": 1,
+    "no-redeclare": 0,
     "no-unused-vars": 0,
     "no-underscore-dangle": [
       "error",

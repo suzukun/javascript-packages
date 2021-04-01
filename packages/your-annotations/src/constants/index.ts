@@ -16,10 +16,10 @@ export const Annotations = {
     TEMP: 'TEMP',
     DEBUG: 'DEBUG',
 } as const;
-export type Annotations = typeof Annotations[keyof typeof Annotations];
+export type AnnotationsType = typeof Annotations[keyof typeof Annotations];
 
 type AnnotationTree = {
-    [key in Annotations]: {
+    [key in AnnotationsType]: {
         HELP: string;
         FONT_COLOR: string;
     };

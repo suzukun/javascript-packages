@@ -2,7 +2,7 @@ import chalk, { Color } from 'chalk';
 import { Command } from 'commander';
 import consola from 'consola';
 import { each, keys, pad, padStart, padEnd, sum } from 'lodash';
-import { Annotations, REG_EXP, ANNOTATIONS } from '../constants';
+import { AnnotationsType, REG_EXP, ANNOTATIONS } from '../constants';
 import { CheckAnnotations } from '../libs/CheckAnnotations';
 import { indent } from '../utils/indent';
 
@@ -24,11 +24,11 @@ const viewHelp = () => {
 };
 
 const viewAnnotations = (param: Options) => {
-    const checkAnnotations = new CheckAnnotations<Annotations>({
+    const checkAnnotations = new CheckAnnotations<AnnotationsType>({
         src: param.target,
         isAllowLowerCase: param.lower,
         isAllowNoColon: param.colon,
-        annotations: keys(ANNOTATIONS) as Annotations[],
+        annotations: keys(ANNOTATIONS) as AnnotationsType[],
         annotationRegExpString: REG_EXP.ANNOTATION.replace(
             '__ANNOTATION__',
             (() => keys(ANNOTATIONS).join('|'))()
@@ -60,7 +60,7 @@ const viewAnnotations = (param: Options) => {
 
     checkAnnotations.on(
         'loadAnnotation',
-        ({ annotation, length }: { annotation: Annotations; length: number }) => {
+        ({ annotation, length }: { annotation: AnnotationsType; length: number }) => {
             consola.log(
                 [
                     indent(1),
@@ -130,12 +130,13 @@ const viewAnnotations = (param: Options) => {
 };
 
 (async () => {
-    const { target, lower, colon, viewAnnotationsList } = new Command()
+    const { opts } = new Command()
         .option('-t, --target <name>', 'target dir', 'src')
         .option('-l, --lower', 'convert lower case', false)
         .option('-c, --colon', 'use colon', false)
         .option('--viewAnnotationsList', 'list up available annotations', false)
         .parse(process.argv);
+    const { target, lower, colon, viewAnnotationsList } = opts();
 
     if (viewAnnotationsList) {
         viewHelp();
