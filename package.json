@@ -15,6 +15,7 @@
     "basics::install": "yarn add -W",
     "basics::installDevelop": "yarn add -W --dev",
     "basics::remove": "yarn remove -W",
+    "basics::bootstrap": "lerna bootstrap",
     "basics::clean": "lerna clean",
     "start": "lerna run --parallel start",
     "build": "lerna run build",
