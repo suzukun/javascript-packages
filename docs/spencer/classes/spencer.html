@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for spencer">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">spencer</a>
 				</li>
 				<li>
 					<a href="spencer.html">Spencer</a>
@@ -97,7 +96,7 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="spencer.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter"><a href="spencer.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
@@ -128,26 +127,35 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter">
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Spencer<span class="tsd-signature-symbol">(</span>shadersTree<span class="tsd-signature-symbol">: </span><a href="../globals.html#shaderstree" class="tsd-signature-type">ShadersTree</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TNames</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TIdentifiers</span><span class="tsd-signature-symbol"> | </span><a href="../globals.html#default_identifier" class="tsd-signature-type">DEFAULT_IDENTIFIER</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="spencer.html" class="tsd-signature-type">Spencer</a></li>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Spencer&lt;TNames, TIdentifiers&gt;<span class="tsd-signature-symbol">(</span>shadersTree<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ShadersTree</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TNames</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TIdentifiers</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;__COMMON_SHADER__&quot;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="spencer.html" class="tsd-signature-type" data-tsd-kind="Class">Spencer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TNames</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TIdentifiers</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/suzukun/javascript-packages/blob/9374b8e/packages/spencer/src/libs/Spencer.ts#L25">src/libs/Spencer.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/suzukun/javascript-packages/blob/0fddf4d/packages/spencer/src/libs/Spencer.ts#L25">libs/Spencer.ts:25</a></li>
 								</ul>
 							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>TNames<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h4>
+								</li>
+								<li>
+									<h4>TIdentifiers<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h4>
+								</li>
+							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>shadersTree: <a href="../globals.html#shaderstree" class="tsd-signature-type">ShadersTree</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TNames</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TIdentifiers</span><span class="tsd-signature-symbol"> | </span><a href="../globals.html#default_identifier" class="tsd-signature-type">DEFAULT_IDENTIFIER</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>shadersTree: <span class="tsd-signature-type">ShadersTree</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TNames</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TIdentifiers</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;__COMMON_SHADER__&quot;</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="spencer.html" class="tsd-signature-type">Spencer</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="spencer.html" class="tsd-signature-type" data-tsd-kind="Class">Spencer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TNames</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TIdentifiers</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -157,30 +165,30 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="_importmarker" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _import<wbr>Marker</h3>
-					<div class="tsd-signature tsd-kind-icon">_import<wbr>Marker<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;import&quot;</span></div>
+					<div class="tsd-signature tsd-kind-icon">_import<wbr>Marker<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &#x27;import&#x27;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/suzukun/javascript-packages/blob/9374b8e/packages/spencer/src/libs/Spencer.ts#L20">src/libs/Spencer.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/suzukun/javascript-packages/blob/0fddf4d/packages/spencer/src/libs/Spencer.ts#L20">libs/Spencer.ts:20</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="_importpattern" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _import<wbr>Pattern</h3>
-					<div class="tsd-signature tsd-kind-icon">_import<wbr>Pattern<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> = new RegExp(&#x60;^[\\s\\t]*#${this._importMarker}\\s+(([\\w\\d./]+)\\s+)?&lt;([\\w\\d./]+)&gt;&#x60;,&#x27;gm&#x27;)</span></div>
+					<div class="tsd-signature tsd-kind-icon">_import<wbr>Pattern<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/suzukun/javascript-packages/blob/9374b8e/packages/spencer/src/libs/Spencer.ts#L22">src/libs/Spencer.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/suzukun/javascript-packages/blob/0fddf4d/packages/spencer/src/libs/Spencer.ts#L22">libs/Spencer.ts:22</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="_shaderstree" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _shaders<wbr>Tree</h3>
-					<div class="tsd-signature tsd-kind-icon">_shaders<wbr>Tree<span class="tsd-signature-symbol">:</span> <a href="../globals.html#shaderstree" class="tsd-signature-type">ShadersTree</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TNames</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TIdentifiers</span><span class="tsd-signature-symbol"> | </span><a href="../globals.html#default_identifier" class="tsd-signature-type">DEFAULT_IDENTIFIER</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<div class="tsd-signature tsd-kind-icon">_shaders<wbr>Tree<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ShadersTree</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TNames</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TIdentifiers</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;__COMMON_SHADER__&quot;</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/suzukun/javascript-packages/blob/9374b8e/packages/spencer/src/libs/Spencer.ts#L18">src/libs/Spencer.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/suzukun/javascript-packages/blob/0fddf4d/packages/spencer/src/libs/Spencer.ts#L18">libs/Spencer.ts:18</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -191,16 +199,16 @@
 					<a name="common_shader" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> COMMON_<wbr>SHADER</h3>
 					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> COMMON_SHADER<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../globals.html#default_identifier" class="tsd-signature-type">DEFAULT_IDENTIFIER</a></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> COMMON_SHADER<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;__COMMON_SHADER__&quot;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/suzukun/javascript-packages/blob/9374b8e/packages/spencer/src/libs/Spencer.ts#L31">src/libs/Spencer.ts:31</a></li>
+									<li>Defined in <a href="https://github.com/suzukun/javascript-packages/blob/0fddf4d/packages/spencer/src/libs/Spencer.ts#L31">libs/Spencer.ts:31</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../globals.html#default_identifier" class="tsd-signature-type">DEFAULT_IDENTIFIER</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">&quot;__COMMON_SHADER__&quot;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -211,13 +219,13 @@
 					<a name="_checkshaderexistence" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _check<wbr>Shader<wbr>Existence</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">_check<wbr>Shader<wbr>Existence<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TNames</span>, identifier<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TIdentifiers</span><span class="tsd-signature-symbol"> | </span><a href="../globals.html#default_identifier" class="tsd-signature-type">DEFAULT_IDENTIFIER</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ShadersTree&lt;TNames, TIdentifiers | &quot;__COMMON_SHADER__&quot;&gt;[TIdentifiers | &quot;__COMMON_SHADER__&quot;][TNames]</span></li>
+						<li class="tsd-signature tsd-kind-icon">_check<wbr>Shader<wbr>Existence<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TNames</span>, identifier<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TIdentifiers</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;__COMMON_SHADER__&quot;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ShadersTree</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TNames</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TIdentifiers</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;__COMMON_SHADER__&quot;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">TIdentifiers</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;__COMMON_SHADER__&quot;</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">TNames</span><span class="tsd-signature-symbol">]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/suzukun/javascript-packages/blob/9374b8e/packages/spencer/src/libs/Spencer.ts#L59">src/libs/Spencer.ts:59</a></li>
+									<li>Defined in <a href="https://github.com/suzukun/javascript-packages/blob/0fddf4d/packages/spencer/src/libs/Spencer.ts#L59">libs/Spencer.ts:59</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -226,10 +234,10 @@
 									<h5>name: <span class="tsd-signature-type">TNames</span></h5>
 								</li>
 								<li>
-									<h5>identifier: <span class="tsd-signature-type">TIdentifiers</span><span class="tsd-signature-symbol"> | </span><a href="../globals.html#default_identifier" class="tsd-signature-type">DEFAULT_IDENTIFIER</a></h5>
+									<h5>identifier: <span class="tsd-signature-type">TIdentifiers</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;__COMMON_SHADER__&quot;</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ShadersTree&lt;TNames, TIdentifiers | &quot;__COMMON_SHADER__&quot;&gt;[TIdentifiers | &quot;__COMMON_SHADER__&quot;][TNames]</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ShadersTree</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TNames</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TIdentifiers</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;__COMMON_SHADER__&quot;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">TIdentifiers</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;__COMMON_SHADER__&quot;</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">TNames</span><span class="tsd-signature-symbol">]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -237,13 +245,13 @@
 					<a name="_replacer" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _replacer</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">_replacer<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TNames</span>, identifier<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">TIdentifiers</span><span class="tsd-signature-symbol"> | </span><a href="../globals.html#default_identifier" class="tsd-signature-type">DEFAULT_IDENTIFIER</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">_replacer<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TNames</span>, identifier<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">TIdentifiers</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;__COMMON_SHADER__&quot;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/suzukun/javascript-packages/blob/9374b8e/packages/spencer/src/libs/Spencer.ts#L63">src/libs/Spencer.ts:63</a></li>
+									<li>Defined in <a href="https://github.com/suzukun/javascript-packages/blob/0fddf4d/packages/spencer/src/libs/Spencer.ts#L63">libs/Spencer.ts:63</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -252,7 +260,7 @@
 									<h5>name: <span class="tsd-signature-type">TNames</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> identifier: <span class="tsd-signature-type">TIdentifiers</span><span class="tsd-signature-symbol"> | </span><a href="../globals.html#default_identifier" class="tsd-signature-type">DEFAULT_IDENTIFIER</a><span class="tsd-signature-symbol"> = DEFAULT_IDENTIFIER</span></h5>
+									<h5>identifier: <span class="tsd-signature-type">TIdentifiers</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;__COMMON_SHADER__&quot;</span><span class="tsd-signature-symbol"> = ...</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -263,13 +271,13 @@
 					<a name="get" class="tsd-anchor"></a>
 					<h3>get</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TNames</span>, identifier<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">TIdentifiers</span><span class="tsd-signature-symbol"> | </span><a href="../globals.html#default_identifier" class="tsd-signature-type">DEFAULT_IDENTIFIER</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TNames</span>, identifier<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">TIdentifiers</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;__COMMON_SHADER__&quot;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/suzukun/javascript-packages/blob/9374b8e/packages/spencer/src/libs/Spencer.ts#L39">src/libs/Spencer.ts:39</a></li>
+									<li>Defined in <a href="https://github.com/suzukun/javascript-packages/blob/0fddf4d/packages/spencer/src/libs/Spencer.ts#L39">libs/Spencer.ts:39</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -278,7 +286,7 @@
 									<h5>name: <span class="tsd-signature-type">TNames</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> identifier: <span class="tsd-signature-type">TIdentifiers</span><span class="tsd-signature-symbol"> | </span><a href="../globals.html#default_identifier" class="tsd-signature-type">DEFAULT_IDENTIFIER</a><span class="tsd-signature-symbol"> = DEFAULT_IDENTIFIER</span></h5>
+									<h5>identifier: <span class="tsd-signature-type">TIdentifiers</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;__COMMON_SHADER__&quot;</span><span class="tsd-signature-symbol"> = ...</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -295,7 +303,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/suzukun/javascript-packages/blob/9374b8e/packages/spencer/src/libs/Spencer.ts#L35">src/libs/Spencer.ts:35</a></li>
+									<li>Defined in <a href="https://github.com/suzukun/javascript-packages/blob/0fddf4d/packages/spencer/src/libs/Spencer.ts#L35">libs/Spencer.ts:35</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -313,8 +321,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 				</ul>
 			</nav>
@@ -325,7 +333,7 @@
 					<li class="current tsd-kind-class tsd-has-type-parameter">
 						<a href="spencer.html" class="tsd-kind-icon">Spencer</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter">
 								<a href="spencer.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
@@ -356,21 +364,6 @@
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-type-alias">
-						<a href="../globals.html#default_identifier" class="tsd-kind-icon">DEFAULT_<wbr>IDENTIFIER</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="../globals.html#shader" class="tsd-kind-icon">Shader</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
-						<a href="../globals.html#shaders" class="tsd-kind-icon">Shaders</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
-						<a href="../globals.html#shaderstree" class="tsd-kind-icon">Shaders<wbr>Tree</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="../globals.html#default_identifier" class="tsd-kind-icon">DEFAULT_<wbr>IDENTIFIER</a>
-					</li>
 				</ul>
 			</nav>
 		</div>
@@ -381,15 +374,11 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
-				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
-			</ul>
-			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
