@@ -38,6 +38,7 @@ jobs:
     steps:
       - checkout
       - restore_dependencies
+      - run: npm install
       - run: npm run basics::bootstrap
       - save_dependencies
       - run: npm run test
@@ -46,6 +47,7 @@ jobs:
     steps:
       - checkout
       - restore_dependencies
+      - run: npm install
       - run: npm run basics::bootstrap
       - save_dependencies
       - run: npm run doc
