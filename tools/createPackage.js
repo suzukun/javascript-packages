@@ -39,15 +39,18 @@ const GENERATE_MAP = {
 };
 
 (async () => {
-    const param = new Command()
+    const program = new Command()
         .option("-t, --target <name>", "package name", null)
         .parse(process.argv);
+    const { target: rawTargetName } = program.opts();
 
-    if (!param.target) {
+    console.log(rawTargetName);
+
+    if (!rawTargetName) {
         throw new Error("名前をつけてください。");
     }
 
-    const target = toKebabCase(toCamelCase(param.target));
+    const target = toKebabCase(toCamelCase(rawTargetName));
     const promises = Object.keys(GENERATE_MAP).map(async (dir) => {
         const modifiedDir = dir
             .replace(FILE_NAME_STUB_TYPE_CAMEL, toCamelCase(target))
@@ -68,7 +71,7 @@ const GENERATE_MAP = {
     await Promise.all(promises);
 
     console.log(
-        ["package ", chalk.green.bold(param.target), " を生成しました。"].join(
+        ["package ", chalk.green.bold(target), " を生成しました。"].join(
             ""
         )
     );
