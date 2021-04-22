@@ -62,7 +62,7 @@
     "textlint-rule-preset-ja-technical-writing": "4.0.1",
     "textlint-rule-spellcheck-tech-word": "5.0.0",
     "ts-jest": "26.5.4",
-    "ts-loader": "8.1.0",
+    "ts-loader": "9.0.0",
     "ts-node": "9.1.1",
     "tslib": "2.2.0",
     "typedoc": "0.20.34",
