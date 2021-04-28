@@ -3584,10 +3584,10 @@ commandpost@^1.2.1:
   resolved "https://registry.npmjs.org/commandpost/-/commandpost-1.4.0.tgz#89218012089dfc9b67a337ba162f15c88e0f1048"
   integrity sha512-aE2Y4MTFJ870NuB/+2z1cXBhSBBzRydVVjzhFC4gtenEhpnj15yu0qptWGJsO9YGrcPZ3ezX8AWb1VA391MKpQ==
 
-comment-parser@1.1.2:
-  version "1.1.2"
-  resolved "https://registry.npmjs.org/comment-parser/-/comment-parser-1.1.2.tgz#e5317d7a2ec22b470dcb54a29b25426c30bf39d8"
-  integrity sha512-AOdq0i8ghZudnYv8RUnHrhTgafUGs61Rdz9jemU5x2lnZwAWyOq7vySo626K59e1fVKH1xSRorJwPVRLSWOoAQ==
+comment-parser@1.1.5:
+  version "1.1.5"
+  resolved "https://registry.npmjs.org/comment-parser/-/comment-parser-1.1.5.tgz#453627ef8f67dbcec44e79a9bd5baa37f0bce9b2"
+  integrity sha512-RePCE4leIhBlmrqiYTvaqEeGYg7qpSl4etaIabKtdOQVi+mSTIBBklGUwIr79GXYnl3LpMwmDw4KeR2stNc6FA==
 
 comment-regex@1.0.1:
   version "1.0.1"
@@ -4712,17 +4712,17 @@ eslint-plugin-import@2.22.1:
     resolve "^1.17.0"
     tsconfig-paths "^3.9.0"
 
-eslint-plugin-jsdoc@32.3.1:
-  version "32.3.1"
-  resolved "https://registry.npmjs.org/eslint-plugin-jsdoc/-/eslint-plugin-jsdoc-32.3.1.tgz#1c50b82b12f903bdb4117f7b68e97fb2f65a5f73"
-  integrity sha512-Xcbc8Cr79QveH+MndVwtZ3uafDdXyrsIkS8lP71Fhn5Qi1Lr8TU2QZNkMYIJSvmuLqDB5Jj/VVULMCvaBZBkvg==
+eslint-plugin-jsdoc@32.3.2:
+  version "32.3.2"
+  resolved "https://registry.npmjs.org/eslint-plugin-jsdoc/-/eslint-plugin-jsdoc-32.3.2.tgz#69cf9ad42bcb0cf265890e7477207392fbfa541d"
+  integrity sha512-kcdg0OvhI466KgMYXwxGvP6+m9J/sIBg0Jkn9eDU5lnM6RSVM27M9zKZim2XY6AUbbdqmkBPEP4ixvtBXRHktQ==
   dependencies:
-    comment-parser "1.1.2"
+    comment-parser "1.1.5"
     debug "^4.3.1"
     jsdoctypeparser "^9.0.0"
-    lodash "^4.17.20"
+    lodash "^4.17.21"
     regextras "^0.7.1"
-    semver "^7.3.4"
+    semver "^7.3.5"
     spdx-expression-parse "^3.0.1"
 
 eslint-plugin-prettier@3.4.0:
