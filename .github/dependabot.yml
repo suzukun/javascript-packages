@@ -1,0 +1,30 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: husky
+    versions:
+    - ">= 0"
+  - dependency-name: typedoc
+    versions:
+    - ">= 0"
+  - dependency-name: typescript
+    versions:
+    - ">= 0"
+  - dependency-name: "@typescript-eslint/eslint-plugin"
+    versions:
+    - ">= 0"
+  - dependency-name: "@typescript-eslint/parser"
+    versions:
+    - ">= 0"
+  - dependency-name: ts-loader
+    versions:
+    - 9.0.0
+  - dependency-name: image-size
+    versions:
+    - 0.9.4
+    - 0.9.5
