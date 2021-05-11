@@ -21,10 +21,3 @@ updates:
   - dependency-name: "@typescript-eslint/parser"
     versions:
     - ">= 0"
-  - dependency-name: ts-loader
-    versions:
-    - 9.0.0
-  - dependency-name: image-size
-    versions:
-    - 0.9.4
-    - 0.9.5
