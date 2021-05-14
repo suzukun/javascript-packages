@@ -44,6 +44,6 @@
     "mini-css-extract-plugin": "1.6.0",
     "node-sass": "6.0.0",
     "postcss-loader": "5.2.0",
-    "sass-loader": "11.1.0"
+    "sass-loader": "11.1.1"
   }
 }
