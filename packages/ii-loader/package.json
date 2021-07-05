@@ -38,7 +38,7 @@
     "@types/loader-utils": "2.0.2",
     "@types/lodash": "4.14.170",
     "@types/mz": "2.7.3",
-    "autoprefixer": "10.2.5",
+    "autoprefixer": "10.2.6",
     "css-loader": "5.2.4",
     "css-mqpacker": "7.0.0",
     "mini-css-extract-plugin": "1.6.0",
