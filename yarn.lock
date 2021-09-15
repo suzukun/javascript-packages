@@ -1811,10 +1811,10 @@
     "@types/minimatch" "*"
     "@types/node" "*"
 
-"@types/gm@1.18.9":
-  version "1.18.9"
-  resolved "https://registry.npmjs.org/@types/gm/-/gm-1.18.9.tgz#32024de48ac911befe456647989451d18eaf4bcc"
-  integrity sha512-b7ybB60YvNQzYauJs1ufviskjWvWRO3MizlU/4RAts77z4HzDbN3OMGAneQnrot0S28EMdNRo98epRUJ/orofQ==
+"@types/gm@1.18.10":
+  version "1.18.10"
+  resolved "https://registry.npmjs.org/@types/gm/-/gm-1.18.10.tgz#9b45819651f8e71c0b5f79ec9872ea52ce8ee2d0"
+  integrity sha512-dY1rQuNFzu94j1dsIaNEJiT1x8AUhgZMlvmyuyMrmRR5X4u6Ammv/1xwjMSyRFDa/rq/A+FIViJc983FRwy6wQ==
   dependencies:
     "@types/node" "*"
 
