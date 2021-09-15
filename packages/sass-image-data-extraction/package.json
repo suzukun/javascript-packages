@@ -32,10 +32,10 @@
     "precommit": "lint-staged"
   },
   "devDependencies": {
-    "@types/async": "3.2.6",
+    "@types/async": "3.2.7",
     "async": "3.2.1",
     "chalk": "4.1.1",
-    "chokidar": "3.5.1",
+    "chokidar": "3.5.2",
     "commander": "7.2.0",
     "image-size": "1.0.0",
     "mz": "2.7.0"
