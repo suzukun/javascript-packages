@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "chalk": "4.1.2",
-    "commander": "7.2.0",
+    "commander": "8.2.0",
     "comment-regex": "1.0.1",
     "consola": "2.15.3",
     "lodash": "4.17.21",
