@@ -30,7 +30,7 @@
     }
   },
   "devDependencies": {
-    "@commitlint/cli": "12.1.4",
+    "@commitlint/cli": "13.1.0",
     "@commitlint/config-conventional": "13.1.0",
     "@commitlint/config-lerna-scopes": "13.1.0",
     "@types/jest": "27.0.1",
