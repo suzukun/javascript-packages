@@ -1788,10 +1788,10 @@
   resolved "https://registry.npmjs.org/@types/anymatch/-/anymatch-1.3.1.tgz#336badc1beecb9dacc38bea2cf32adf627a8421a"
   integrity sha512-/+CRPXpBDpo2RK9C68N3b2cOvO0Cf5B9aPijHsoDQTHivnGSObdOF2BRQOYjojWTDy6nQvMjmqRXIxH55VjxxA==
 
-"@types/async@3.2.7":
-  version "3.2.7"
-  resolved "https://registry.npmjs.org/@types/async/-/async-3.2.7.tgz#f784478440d313941e7b12c2e4db53b0ed55637b"
-  integrity sha512-a+MBBfOTs3ShFMlbH9qsRVFkjIUunEtxrBT0gxRx1cntjKRg2WApuGmNYzHkwKaIhMi3SMbKktaD/rLObQMwIw==
+"@types/async@3.2.11":
+  version "3.2.11"
+  resolved "https://registry.npmjs.org/@types/async/-/async-3.2.11.tgz#72a23be0c678cd227f1777b650ecf21f325f1824"
+  integrity sha512-o+JfsXfUk/JAZTJZjZcovBvpEiu9wM1+tH5E9YiQztFyCessks/e3K06OasRlgKpkh698tbx4C982Te5KcQqKA==
 
 "@types/babel__core@^7.0.0", "@types/babel__core@^7.1.7":
   version "7.1.9"
