@@ -1922,10 +1922,10 @@
     "@types/node" "*"
     "@types/webpack" "^4"
 
-"@types/lodash@4.14.172":
-  version "4.14.172"
-  resolved "https://registry.npmjs.org/@types/lodash/-/lodash-4.14.172.tgz#aad774c28e7bfd7a67de25408e03ee5a8c3d028a"
-  integrity sha512-/BHF5HAx3em7/KkzVKm3LrsD6HZAXuXO1AJZQ3cRRBZj4oHZDviWPYu0aEplAqDFNHZPW6d3G7KN+ONcCCC7pw==
+"@types/lodash@4.14.183":
+  version "4.14.183"
+  resolved "https://registry.npmjs.org/@types/lodash/-/lodash-4.14.183.tgz#1173e843e858cff5b997c234df2789a4a54c2374"
+  integrity sha512-UXavyuxzXKMqJPEpFPri6Ku5F9af6ZJXUneHhvQJxavrEjuHkFp2YnDWHcxJiG7hk8ZkWqjcyNeW1s/smZv5cw==
 
 "@types/minimatch@*", "@types/minimatch@^3.0.3":
   version "3.0.3"
