@@ -56,7 +56,7 @@
     "prettier": "2.4.0",
     "rimraf": "3.0.2",
     "terser-webpack-plugin": "4.2.3",
-    "textlint": "11.9.1",
+    "textlint": "13.2.0",
     "textlint-filter-rule-allowlist": "4.0.0",
     "textlint-rule-preset-ja-spacing": "2.2.0",
     "textlint-rule-preset-ja-technical-writing": "7.0.0",
